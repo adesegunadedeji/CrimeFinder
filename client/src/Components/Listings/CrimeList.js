@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import './index.css'
+import Listings from './Listings'
 
-class CrimeList extends Component {
+class CrimeSearch extends Component {
     constructor(){
         super()
         this.state={
@@ -62,11 +63,11 @@ class CrimeList extends Component {
             <input type="text" name="search" onChange={this.handleChange} />
             <input type="submit" value="Crime Search" ></input>
             </form>
-      
+            <Listings listings = {this.state.listings}/>
             </div>
         )
     }
 
 }
 
-export default CrimeList
+export default CrimeSearch
