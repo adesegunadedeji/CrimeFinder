@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import './index.css'
 import Listings from './Listings'
+import TableComp from '../Table/Table'
 
 class CrimeSearch extends Component {
     constructor(){
@@ -63,7 +64,8 @@ class CrimeSearch extends Component {
             <input type="text" name="search" onChange={this.handleChange} />
             <input type="submit" value="Crime Search" ></input>
             </form>
-            <Listings listings = {this.state.listings}/>
+            {/* <Listings listings = {this.state.listings}/> */}
+            <TableComp listings = {this.state.listings}/>
             </div>
         )
     }

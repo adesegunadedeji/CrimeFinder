@@ -4,8 +4,7 @@ import CrimeSearch from './Components/Listings/CrimeList';
 function App() {
   return (
     <div className="App">
-   <h1>App JS test</h1>
-    <CrimeSearch />
+    <CrimeSearch/>
     </div>
   );
 }
