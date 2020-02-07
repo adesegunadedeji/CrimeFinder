@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import CrimeSearch from './Components/Listings/CrimeList';
 import { Switch, Route } from 'react-router-dom';
-import Home from './Components/Home/Home';
+import Home from './Components/Home/NavbarComp';
 function App() {
   return (
     <div className="App">

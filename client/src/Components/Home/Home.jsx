@@ -1,23 +1,12 @@
-import React, {Component} from 'react';
-
-class Home extends Component {
-    constructor() {
-        super();
-        this.state = {
-
-        }
-    }
-render() {
+import React, {Component} from 'react'
+import './Home.css'
+import NavbarComp from './NavbarComp'
+function Home () {
     return(
-        <div className="HomePage">
-            <div className="HomepageImage">
-                Crime
-            </div>
+        <div>
+            <NavbarComp/>
+            Home
         </div>
     )
 }
-
-
-}
-
-export default Home
+export default  Home

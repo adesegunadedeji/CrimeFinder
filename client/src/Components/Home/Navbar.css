@@ -1,0 +1,9 @@
+nav{
+    background-color: #F8F8F8;
+   
+}
+
+a.navbar-brand, a.nav-link{
+    font-family: 'Kelly Slab', cursive;
+text-decoration-color: rgb(134, 5, 5);
+}
