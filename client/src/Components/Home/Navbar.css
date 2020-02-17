@@ -1,9 +1,12 @@
 nav{
-    background-color: #F8F8F8;
+    background-color: #FFF04A;
    
 }
-
 a.navbar-brand, a.nav-link{
-    font-family: 'Kelly Slab', cursive;
-text-decoration-color: rgb(134, 5, 5);
+    font-family: 'Tomorrow', sans-serif;
+}
+a{
+    color: #00234B;
+    font-size: 20px;
+    text-decoration-color: #00234B;
 }

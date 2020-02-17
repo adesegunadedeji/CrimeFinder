@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import './index.css'
-import Listings from './Listings'
 import TableComp from '../Table/Table'
 
 class CrimeSearch extends Component {
@@ -34,6 +33,7 @@ class CrimeSearch extends Component {
             this.setState({
                 listings: parsedResponse
             })
+            console.log("THIS STATE LISTINGS",this.state.listings)
         } catch (err) {
             console.log(err)    
         }

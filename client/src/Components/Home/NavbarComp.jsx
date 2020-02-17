@@ -11,8 +11,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  NavbarText
+  DropdownItem
 } from 'reactstrap';
 
 const NavbarComp = (props) => {
@@ -22,12 +21,12 @@ const NavbarComp = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar color="#FF04A" light expand="md">
         <NavbarBrand href="/">crimefinder</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
+            <NavItem class="linkNav">
               <NavLink href="/home/">Home</NavLink>
             </NavItem>
             <NavItem>
@@ -51,7 +50,6 @@ const NavbarComp = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>

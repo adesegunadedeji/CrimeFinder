@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.linkNav{
+  color: #00234B;
+  font-size: 20px;
+  text-decoration-color: #00234B;
+}
