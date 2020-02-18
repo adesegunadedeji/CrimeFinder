@@ -9,9 +9,9 @@ function Home () {
             <div>
             <img src={spaceNeedle} alt="Space Needle Seattle"></img>
             <h1 className="imageHeader">Are you a Seattle resident?</h1>
-            <button>Learn More</button>
+            <button className="homeButton">Learn More</button>
             </div>
-           
+            <div className="space"></div>
         </div>
     )
 }

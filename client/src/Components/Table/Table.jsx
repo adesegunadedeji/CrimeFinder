@@ -3,8 +3,8 @@ import { Table } from 'reactstrap';
 import './Table.css'
 
 const TableComp = (props) => {
-    console.log(props)
-    let listings = props.listings.map((listings)=>{
+    console.log("PROPS",props)
+    let listings = props.location.state.listings.map((listings)=>{
         return(
     <tbody key = {listings.id}>
       <tr>
@@ -34,7 +34,7 @@ const TableComp = (props) => {
       </tr>
     </thead>
           {listings}
-          </Table>
+          </Table >
       </div>
   );
 }
