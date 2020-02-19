@@ -1,6 +1,7 @@
 import React from 'react';
-import { Table } from 'reactstrap';
+import { Table} from 'reactstrap';
 import './Table.css'
+import NavbarComp from '../Home/NavbarComp'
 
 const TableComp = (props) => {
     console.log("PROPS",props)
@@ -22,7 +23,8 @@ const TableComp = (props) => {
 
   return (
       <div>
-    <Table dark>
+        <NavbarComp/>
+    <Table className="table">
     <thead>
       <tr>
         <th>Case Number</th>

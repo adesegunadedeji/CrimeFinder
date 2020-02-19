@@ -18,6 +18,7 @@ class CrimeList extends Component {
              const url = 
              //`https://data.cityofchicago.org/resource/ijzp-q8t2.json`
              `https://data.cityofchicago.org/resource/ijzp-q8t2.json?primary_type=${search}`
+            //  https://data.seattle.gov/resource/4fs7-3vj5.json
             console.log(url);
         
             const crimeSearch = await fetch (url,{
