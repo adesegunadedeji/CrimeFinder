@@ -5,11 +5,13 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer'
 import TableComp from './Components/Table/Table'
+import SimpleMap from  './Components/Listings/SimpleMap'
 class App extends Component {
   constructor(){
     super();
     this.state={
       test: ""
+      
     }
 
   }
@@ -24,6 +26,8 @@ class App extends Component {
         <Route path ="/crimes" component ={CrimeList}>
         </Route>
         <Route path ="/listings" component ={TableComp}>
+        </Route>
+        <Route path ="/map" component ={SimpleMap}>
         </Route>
       </Switch>
    <Footer/>

@@ -9,13 +9,11 @@ const TableComp = (props) => {
         return(
     <tbody key = {listings.id}>
       <tr>
-    <th scope="row">{listings.case_number}</th>
-        <td>{listings.primary_type}</td>
-        
-        <td>{listings.description}</td>
-        <td>{listings.block}</td>
-        <td>{listings.year}</td>
-        <td>{listings.date}</td>
+    <th scope="row">{listings.go_number}</th>
+        <td>{listings.crime_subcategory}</td>
+        <td>{listings.neighborhood}</td>
+        <td>{listings.precinct}</td>
+        <td>{listings.occ_datetime}</td>
       </tr>
       </tbody>
       )
@@ -27,12 +25,11 @@ const TableComp = (props) => {
     <Table className="table">
     <thead>
       <tr>
-        <th>Case Number</th>
         <th>Crime Type</th>
         <th>Description</th>
         <th>Location</th>
+        <th>Precinct</th>
         <th>Date</th>
-        <th>Year</th>
       </tr>
     </thead>
           {listings}

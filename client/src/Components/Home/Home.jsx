@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import spaceNeedle from './spaceNeedle.jpg' 
 import NavbarComp from './NavbarComp'
+import {Button} from 'reactstrap'
 function Home () {
     return(
         <div>
@@ -9,7 +10,7 @@ function Home () {
             <div>
             <img src={spaceNeedle} alt="Space Needle Seattle"></img>
             <h1 className="imageHeader">Are you a Seattle resident?</h1>
-            <button className="homeButton">Learn More</button>
+            <Button className="homeButton" href="/crimes" >Learn More</Button>
             </div>
             <div className="space"></div>
         </div>

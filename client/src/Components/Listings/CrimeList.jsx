@@ -14,7 +14,8 @@ class CrimeList extends Component {
         }
     }
     getListings = async (search)=> {
-        console.log(process.env.REACT_APP_token)
+        console.log(process.env.REACT_APP_token,"token")
+        console.log(process.env.REACT_APP_BACKEND_ADDRESS , "KEY")
         try {
              const url = 
              //`https://data.cityofchicago.org/resource/ijzp-q8t2.json`

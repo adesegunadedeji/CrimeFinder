@@ -8,7 +8,7 @@ img{
     width: 100%;
     height: auto;
 }
-.homeButton{
+a.homeButton{
     background: #FFF04A;
     padding: 10px 20px;
     font-size: 20px;

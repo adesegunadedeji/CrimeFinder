@@ -7,12 +7,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from 'reactstrap';
+  NavLink} from 'reactstrap';
 
 const NavbarComp = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,23 +27,10 @@ const NavbarComp = (props) => {
             <NavItem>
               <NavLink href="/crimes">CrimesList</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-               Learn More
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                 About Us
-                </DropdownItem>
-                <DropdownItem>
-                  Test
-                </DropdownItem>
-                {/* <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem> */}
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="/map">Map</NavLink>
+            </NavItem>
+          
           </Nav>
         </Collapse>
       </Navbar>
