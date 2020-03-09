@@ -7,6 +7,7 @@
     "node": "10.15.3"
   },
   "dependencies": {
+    "@pusher/chatkit-client-react": "^0.1.4",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "google-map-react": "^1.1.6",

@@ -30,7 +30,9 @@ const NavbarComp = (props) => {
             <NavItem>
               <NavLink href="/map">Map</NavLink>
             </NavItem>
-          
+            <NavItem>
+              <NavLink href="/chat">Chat</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
