@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer'
 import TableComp from './Components/Table/Table'
 import SimpleMap from  './Components/Listings/SimpleMap'
 import chatBox from './Components/chat/chat';
+import Index from './Components/chat/Index/index'
 class App extends Component {
   constructor(){
     super();
@@ -31,6 +32,8 @@ class App extends Component {
         <Route path ="/map" component ={SimpleMap}>
         </Route>
         <Route path ="/chat" component ={chatBox}>
+        </Route>
+        <Route path ="/index" component ={Index}>
         </Route>
       </Switch>
    <Footer/>
