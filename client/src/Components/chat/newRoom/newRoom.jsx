@@ -30,6 +30,7 @@ class NewRoom extends Component{
             <div className = "newRoomComponent">
                 <form onSubmit={this.handleSubmit}>
                     <input onChange={this.handleChange} 
+                    className="newRoomComponentInput"
                     value={this.state.roomName}
                     placeholder="New Room" type="text" name="roomName" required>
                     </input>

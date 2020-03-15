@@ -1,0 +1,8 @@
+.messageComponent{
+    text-align: left;
+}
+
+.messages_Text span{ 
+    background-color:#A4D7D9 ;
+    font-size: 20px;
+}

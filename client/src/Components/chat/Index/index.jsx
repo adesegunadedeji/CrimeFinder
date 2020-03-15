@@ -109,8 +109,9 @@ subscribeToRoom(roomId){
     render(){
         console.log("this.state.messages:",this.state.messages)
         return(
+            <div className="index">
+                <NavbarComp/>
             <div className="indexComponent">
-                {/* <NavbarComp/> */}
                 <MessageList messages={this.state.messages}
                 roomId={this.state.roomId}/>
                 <SendMessage 
@@ -120,7 +121,7 @@ subscribeToRoom(roomId){
                 subscribeToRoom={this.subscribeToRoom}
                 rooms = {[...this.state.joinableRooms, ...this.state.alreadyJoinedRooms]}/>
                 <NewRoom createRoom={this.createRoom}/>
-               
+            </div>
             </div>
         )
     }

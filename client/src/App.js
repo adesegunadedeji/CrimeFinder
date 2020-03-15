@@ -6,8 +6,8 @@ import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer'
 import TableComp from './Components/Table/Table'
 import SimpleMap from  './Components/Listings/SimpleMap'
-import chatBox from './Components/chat/chat';
 import Index from './Components/chat/Index/index'
+import { Navbar } from 'reactstrap';
 class App extends Component {
   constructor(){
     super();
@@ -22,6 +22,7 @@ class App extends Component {
  
   return (
     <div className="App">
+      <Navbar/>
       <Switch>
       <Route exact path={"/"} component ={Home}>
         </Route>
@@ -31,7 +32,7 @@ class App extends Component {
         </Route>
         <Route path ="/map" component ={SimpleMap}>
         </Route>
-        <Route path ="/chat" component ={chatBox}>
+        <Route path ="/chat" component ={Index}>
         </Route>
         <Route path ="/index" component ={Index}>
         </Route>
